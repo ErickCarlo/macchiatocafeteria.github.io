@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="./styles/output.css"/>
+
+    <title>Macchiato Cafeteria</title>
+</head>
+<body>
+
+    <!-- BARRA DE LOGIN -->
+   <!-- <div class="bg-gray-800 text-white py-2 px-4 flex justify-between items-center fixed top-0 w-full z-50">
+        <div>
+            <a href="#" class="font-bold text-lg">Macchiato Cafeteria</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="./tela-login.html" class="hover:underline">Entrar</a>
+            <a href="#" class="hover:underline">Registrar</a>
+        </div>
+    </div> -->
+    <!-- FIM BARRA DE LOGIN -->    
+   
+    <!-- HEADDER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center ">
+            <img
+             src="./assets/logo 1.jpg"
+             alt="Logo Dev-Erick"
+             class="w-32 - h32 rounded-full shadow-lg hover:scale-110 duration-200"
+             /> <!-- W É LATURA E H ALTURA-->
+            <h1 class="text-4xl mt- 4 mb-2 font-bold text-white">
+                Macchiato Cafeteria
+            </h1>
+
+            <span class="text-white font-medium">Rua Avenida Doutor Rafael Paes de Barros Nº 99, Guarulhos-SP</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Sábado - 08:00 as 22:00</span>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- FIM DO HEADDER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <!-- INICIO MENU-->
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- PRODUTO ITEM 1-->
+            <div class="flex gap-2">
+                <img
+                    src="./assets/Cafe 01.jpg"
+                    alt="Café 1"
+                    class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                /> 
+
+                <div>
+                    <p class="font-bold">Cappucino Premium</p>
+                    <p class="text-sm">Bebida italiana preparada com café expresso e leite. Um cappuccino clássico, muito famoso no Brasil</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                            data-name="Cappucino Premium"
+                            data-price="32.90"
+                            >
+                          
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM 1-->
+
+                        <!-- PRODUTO ITEM 2-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe 02.jpg"
+                                alt="Cafe 2 Premium Latte"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Premium Latte</p>
+                                <p class="text-sm">Café com leite é uma bebida clássica do café da manhã brasileiro, feita com a mistura de café e leite. É uma das bebidas matinais mais consumidas no mundo</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 35.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Premium Latte"
+                                        data-price="35.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 2-->
+
+                        <!-- PRODUTO ITEM 3-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe 03 teste.jpg"
+                                alt="Café 3 Espresso"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Espresso</p>
+                                <p class="text-sm">O café espresso pode ser uma boa opção para quem gosta de um café mais intenso, macio e cremoso. Ele é preparado com alta pressão e uma quantidade menor de água, o que resulta em um sabor mais acentuado e concentrado.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 22.99</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Espresso"
+                                        data-price="22.99"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 3-->
+
+                        <!-- PRODUTO ITEM 4-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe 04.jpg"
+                                alt="Café 4 Latte"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Latte</p>
+                                <p class="text-sm">Espresso com maior quantidade de leite vaporizado e uma fina camada de espuma.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 30.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Latte"
+                                        data-price="30.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 4-->
+
+                        <!-- PRODUTO ITEM 5-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe Gelado 05.jpg"
+                                alt="Café Gelado"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Gelado</p>
+                                <p class="text-sm">O café gelado é uma bebida preparada à base de café, misturado com alimento congelado.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 30.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café Gelado"
+                                        data-price="35.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 5-->      
+                         
+                        <!-- PRODUTO ITEM 6-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe Moido 07.jpg"
+                                alt="Café Moido"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Moido</p>
+                                <p class="text-sm">A qualidade da bebida final tende a ser superior quando o café é moído na hora, pois o frescor é maximizado.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 30.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café moído"
+                                        data-price="15.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 6-->    
+                         
+                        <!-- PRODUTO ITEM 7-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe Tradicional 06.jpg"
+                                alt="Café Tradicional"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Tradicional</p>
+                                <p class="text-sm">O Café tradicional brasileiro é um blend de grãos torrados e moídos, de regiões cafeeiras do Brasil.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 15.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café Tradicional"
+                                        data-price="15.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 7-->
+                         
+                        <!-- PRODUTO ITEM 8-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Café Americano.jpg"
+                                alt="Café Americano"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Americano</p>
+                                <p class="text-sm">Semelhante ao espresso, mas com mais água, o que o deixa mais suave. É feito adicionando água quente ao espresso.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 25.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café Americano"
+                                        data-price="25.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 8-->
+
+                        <!-- PRODUTO ITEM 9-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe Flat White.jpg"
+                                alt="Café Flat White"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Flat White</p>
+                                <p class="text-sm">Originário da Austrália e Nova Zelândia, é semelhante ao latte, mas com menos espuma e mais leite cremoso, destacando o sabor do café.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 25.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café Flat White"
+                                        data-price="55.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 9-->
+                         
+                        <!-- PRODUTO ITEM 10-->
+                        <div class="flex gap-2">
+                            <img
+                                src="./assets/Cafe Ristretto.jpg"
+                                alt="Café Ristretto"
+                                class="w-28 h-27 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            /> 
+            
+                            <div>
+                                <p class="font-bold">Café Ristretto</p>
+                                <p class="text-sm">Uma versão mais concentrada do espresso, feita com menos água e sabor mais intenso e adocicado.</p>
+            
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 40.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-bnt"
+                                        data-name="Café Ristretto"
+                                        data-price="40.00"
+                                        >
+                                      
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM PRODUTO ITEM 10-->                        
+                         
+                        
+                         
+
+        </main>
+
+    </div>
+
+    <!-- INICIO MENU-->
+
+    <!-- MODAL CART -->
+     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+     id="cart-modal"
+     > 
+     
+     <!--flex items-center justify-center-->
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+           <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2> 
+           
+           <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+           <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+           <p class="font-bold mt-4">Endereço de Entrega:</p>
+           <input
+            type="text"
+            placeholder="Digite seu endereço completo..."
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+           />
+           <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo! </p>
+
+           <div class="flex items-center justify-between mt-5 w-full">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-bnt" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+           </div>
+
+        </div>
+
+     </div>
+    <!-- FIM MODAL CART -->
+
+    <!-- BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button 
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>) <!-- (<span id="cart-count">2</span>) -->
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+     <!-- FIM BUTTON CART FOOTER-->
+    
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script src="script.js"></script>
+     
+</body>
+</html>
